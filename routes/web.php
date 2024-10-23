@@ -9,8 +9,8 @@ route::get('/', function () {
 });
 
 
-route::get('/workers', [WorkerController::class, 'index']); 
-route::get('/show', [WorkerController::class, 'show']);
-route::get('/create', [WorkerController::class, 'create']);
-route::get('/update', [WorkerController::class, 'update']);
-route::get('/delete', [WorkerController::class, 'delete']); 
+route::get('/workers', [WorkerController::class, 'index'])->name('worker.index'); 
+route::get('/show/{worker}', [WorkerController::class, 'show'])->name('worker.show');
+route::get('/create', [WorkerController::class, 'create'])->name('worker.create');
+route::get('/update', [WorkerController::class, 'update'])->name('worker.update');
+route::get('/delete', [WorkerController::class, 'delete'])->name('worker.delete'); 
