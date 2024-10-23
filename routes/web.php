@@ -11,3 +11,6 @@ route::get('/', function () {
 
 route::get('/workers', [WorkerController::class, 'index']); 
 route::get('/show', [WorkerController::class, 'show']);
+route::get('/create', [WorkerController::class, 'create']);
+route::get('/update', [WorkerController::class, 'update']);
+route::get('/delete', [WorkerController::class, 'delete']); 
