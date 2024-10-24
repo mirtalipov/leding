@@ -16,7 +16,7 @@
             <div>Discription:{{$worker->discription}}</div>         
             <div>is married:{{$worker->is_married}}</div>             
             <div>
-                <a href="{{route('worker.show')}}">Просмотреть</a>
+                <a href="{{ route('worker.show', ['worker' => $worker->id]) }}">Показать сотрудника</a>
             </div>
         </div>
         <hr>

@@ -12,7 +12,7 @@ class WorkerController extends Controller
         $workers = Worker::all();
         return view('worker.index', compact('workers'));
     }
-    public function show($worker)
+    public function show(Worker $worker)
     {
         dd($worker);
     }
